@@ -15,10 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        // Override point for customization after application launch.
-        self.window!.backgroundColor = UIColor.whiteColor()
-        self.window!.makeKeyAndVisible()
+        
+        Parse.setApplicationId("1E77yAUnj1AZN03460JVR1WM7vKS4avTGBC5YZ4t", clientKey: "EzJJmORYQp6dsAxwt7LoNwqQQWGmWgC9nmjBxtfK")
+
         return true
     }
 

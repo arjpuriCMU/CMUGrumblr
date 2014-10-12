@@ -11,6 +11,23 @@
 		2A77EECE19EB384F008DDFFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A77EECD19EB384F008DDFFF /* Images.xcassets */; };
 		2A77EED119EB384F008DDFFF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A77EECF19EB384F008DDFFF /* LaunchScreen.xib */; };
 		2A77EEDD19EB384F008DDFFF /* GrumblrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A77EEDC19EB384F008DDFFF /* GrumblrTests.swift */; };
+		2A77EEE719EB39B4008DDFFF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEE619EB39B4008DDFFF /* AudioToolbox.framework */; };
+		2A77EEE919EB39F4008DDFFF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEE819EB39F4008DDFFF /* CFNetwork.framework */; };
+		2A77EEEB19EB3A08008DDFFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEEA19EB3A08008DDFFF /* CoreGraphics.framework */; };
+		2A77EEED19EB3A13008DDFFF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEEC19EB3A13008DDFFF /* CoreLocation.framework */; };
+		2A77EEEF19EB3A1F008DDFFF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEEE19EB3A1F008DDFFF /* libz.dylib */; };
+		2A77EEF119EB3A2A008DDFFF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEF019EB3A2A008DDFFF /* MobileCoreServices.framework */; };
+		2A77EEF319EB3A37008DDFFF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEF219EB3A37008DDFFF /* QuartzCore.framework */; };
+		2A77EEF519EB3A43008DDFFF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEF419EB3A43008DDFFF /* Security.framework */; };
+		2A77EEF719EB3A51008DDFFF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEF619EB3A51008DDFFF /* StoreKit.framework */; };
+		2A77EEF919EB3A5B008DDFFF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEF819EB3A5B008DDFFF /* SystemConfiguration.framework */; };
+		2A77EEFE19EB3BA7008DDFFF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEFB19EB3BA7008DDFFF /* Bolts.framework */; };
+		2A77EEFF19EB3BA7008DDFFF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEFC19EB3BA7008DDFFF /* Parse.framework */; };
+		2A77EF0019EB3BA7008DDFFF /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEFD19EB3BA7008DDFFF /* ParseFacebookUtils.framework */; };
+		2A77EF0619EB3ECD008DDFFF /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A77EF0519EB3ECD008DDFFF /* Storyboard.storyboard */; };
+		2A77EF0819EB48F8008DDFFF /* TimeLineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A77EF0719EB48F8008DDFFF /* TimeLineTableViewController.swift */; };
+		2A77EF0A19EB4979008DDFFF /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A77EF0919EB4979008DDFFF /* ComposeViewController.swift */; };
+		2A77EF0C19EB4C63008DDFFF /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A77EF0B19EB4C63008DDFFF /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +49,24 @@
 		2A77EED619EB384F008DDFFF /* GrumblrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrumblrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A77EEDB19EB384F008DDFFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A77EEDC19EB384F008DDFFF /* GrumblrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrumblrTests.swift; sourceTree = "<group>"; };
+		2A77EEE619EB39B4008DDFFF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2A77EEE819EB39F4008DDFFF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2A77EEEA19EB3A08008DDFFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2A77EEEC19EB3A13008DDFFF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2A77EEEE19EB3A1F008DDFFF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2A77EEF019EB3A2A008DDFFF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2A77EEF219EB3A37008DDFFF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2A77EEF419EB3A43008DDFFF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2A77EEF619EB3A51008DDFFF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2A77EEF819EB3A5B008DDFFF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2A77EEFB19EB3BA7008DDFFF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		2A77EEFC19EB3BA7008DDFFF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		2A77EEFD19EB3BA7008DDFFF /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		2A77EF0219EB3C4C008DDFFF /* Grumblr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Grumblr-Bridging-Header.h"; sourceTree = "<group>"; };
+		2A77EF0519EB3ECD008DDFFF /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		2A77EF0719EB48F8008DDFFF /* TimeLineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewController.swift; sourceTree = "<group>"; };
+		2A77EF0919EB4979008DDFFF /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		2A77EF0B19EB4C63008DDFFF /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +74,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A77EEF919EB3A5B008DDFFF /* SystemConfiguration.framework in Frameworks */,
+				2A77EEF719EB3A51008DDFFF /* StoreKit.framework in Frameworks */,
+				2A77EEF519EB3A43008DDFFF /* Security.framework in Frameworks */,
+				2A77EEF319EB3A37008DDFFF /* QuartzCore.framework in Frameworks */,
+				2A77EEF119EB3A2A008DDFFF /* MobileCoreServices.framework in Frameworks */,
+				2A77EEEF19EB3A1F008DDFFF /* libz.dylib in Frameworks */,
+				2A77EEED19EB3A13008DDFFF /* CoreLocation.framework in Frameworks */,
+				2A77EEEB19EB3A08008DDFFF /* CoreGraphics.framework in Frameworks */,
+				2A77EEFE19EB3BA7008DDFFF /* Bolts.framework in Frameworks */,
+				2A77EEE919EB39F4008DDFFF /* CFNetwork.framework in Frameworks */,
+				2A77EEFF19EB3BA7008DDFFF /* Parse.framework in Frameworks */,
+				2A77EEE719EB39B4008DDFFF /* AudioToolbox.framework in Frameworks */,
+				2A77EF0019EB3BA7008DDFFF /* ParseFacebookUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +103,8 @@
 		2A77EEBD19EB384F008DDFFF = {
 			isa = PBXGroup;
 			children = (
+				2A77EEFA19EB3BA7008DDFFF /* parse-library-1.4.1 */,
+				2A77EF0119EB3BEC008DDFFF /* frameworks */,
 				2A77EEC819EB384F008DDFFF /* Grumblr */,
 				2A77EED919EB384F008DDFFF /* GrumblrTests */,
 				2A77EEC719EB384F008DDFFF /* Products */,
@@ -74,6 +124,11 @@
 			isa = PBXGroup;
 			children = (
 				2A77EECB19EB384F008DDFFF /* AppDelegate.swift */,
+				2A77EF0519EB3ECD008DDFFF /* Storyboard.storyboard */,
+				2A77EF0919EB4979008DDFFF /* ComposeViewController.swift */,
+				2A77EF0719EB48F8008DDFFF /* TimeLineTableViewController.swift */,
+				2A77EF0B19EB4C63008DDFFF /* PostTableViewCell.swift */,
+				2A77EF0219EB3C4C008DDFFF /* Grumblr-Bridging-Header.h */,
 				2A77EECD19EB384F008DDFFF /* Images.xcassets */,
 				2A77EECF19EB384F008DDFFF /* LaunchScreen.xib */,
 				2A77EEC919EB384F008DDFFF /* Supporting Files */,
@@ -104,6 +159,33 @@
 				2A77EEDB19EB384F008DDFFF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A77EEFA19EB3BA7008DDFFF /* parse-library-1.4.1 */ = {
+			isa = PBXGroup;
+			children = (
+				2A77EEFB19EB3BA7008DDFFF /* Bolts.framework */,
+				2A77EEFC19EB3BA7008DDFFF /* Parse.framework */,
+				2A77EEFD19EB3BA7008DDFFF /* ParseFacebookUtils.framework */,
+			);
+			path = "parse-library-1.4.1";
+			sourceTree = "<group>";
+		};
+		2A77EF0119EB3BEC008DDFFF /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A77EEF819EB3A5B008DDFFF /* SystemConfiguration.framework */,
+				2A77EEF619EB3A51008DDFFF /* StoreKit.framework */,
+				2A77EEF419EB3A43008DDFFF /* Security.framework */,
+				2A77EEF219EB3A37008DDFFF /* QuartzCore.framework */,
+				2A77EEF019EB3A2A008DDFFF /* MobileCoreServices.framework */,
+				2A77EEEE19EB3A1F008DDFFF /* libz.dylib */,
+				2A77EEEC19EB3A13008DDFFF /* CoreLocation.framework */,
+				2A77EEEA19EB3A08008DDFFF /* CoreGraphics.framework */,
+				2A77EEE819EB39F4008DDFFF /* CFNetwork.framework */,
+				2A77EEE619EB39B4008DDFFF /* AudioToolbox.framework */,
+			);
+			name = frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +270,7 @@
 			files = (
 				2A77EED119EB384F008DDFFF /* LaunchScreen.xib in Resources */,
 				2A77EECE19EB384F008DDFFF /* Images.xcassets in Resources */,
+				2A77EF0619EB3ECD008DDFFF /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A77EF0A19EB4979008DDFFF /* ComposeViewController.swift in Sources */,
+				2A77EF0819EB48F8008DDFFF /* TimeLineTableViewController.swift in Sources */,
 				2A77EECC19EB384F008DDFFF /* AppDelegate.swift in Sources */,
+				2A77EF0C19EB4C63008DDFFF /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,9 +406,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.4.1",
+				);
 				INFOPLIST_FILE = Grumblr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Grumblr/Grumblr-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -330,9 +423,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.4.1",
+				);
 				INFOPLIST_FILE = Grumblr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Grumblr/Grumblr-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -389,6 +488,7 @@
 				2A77EEE219EB384F008DDFFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A77EEE319EB384F008DDFFF /* Build configuration list for PBXNativeTarget "GrumblrTests" */ = {
 			isa = XCConfigurationList;
@@ -397,6 +497,7 @@
 				2A77EEE519EB384F008DDFFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

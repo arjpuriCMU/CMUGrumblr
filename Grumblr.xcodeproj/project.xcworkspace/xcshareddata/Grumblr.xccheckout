@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8935DF74-EB46-4A48-ACF4-BAEAB4C1585F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Grumblr</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F0579018C429FD97837F5EDEE675CC3F41C57585</key>
+		<string>https://github.com/arjpuriCMU/CMUGrumblr.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Grumblr.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F0579018C429FD97837F5EDEE675CC3F41C57585</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/arjpuriCMU/CMUGrumblr.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F0579018C429FD97837F5EDEE675CC3F41C57585</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F0579018C429FD97837F5EDEE675CC3F41C57585</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CMUGrumblr</string>
+		</dict>
+	</array>
+</dict>
+</plist>
