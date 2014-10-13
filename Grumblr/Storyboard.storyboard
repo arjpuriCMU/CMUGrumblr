@@ -94,6 +94,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="i84-L7-JV8">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="NOa-fn-541">
+                            <connections>
+                                <action selector="loadData" destination="oWB-8j-Hqi" id="bay-Hg-dH9"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Blr-qB-fdD">
                             <connections>
                                 <segue destination="k0q-e1-HZs" kind="push" id="jDf-Uy-vuI"/>

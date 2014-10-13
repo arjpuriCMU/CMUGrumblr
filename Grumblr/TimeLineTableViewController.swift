@@ -12,7 +12,7 @@ class TimeLineTableViewController: UITableViewController {
     
     var timeLineData:NSMutableArray = NSMutableArray()
     
-    func loadData(){
+    @IBAction func loadData(){
         timeLineData.removeAllObjects()
         var findTimeLineData: PFQuery = PFQuery(className: "Post")
         findTimeLineData.findObjectsInBackgroundWithBlock{
