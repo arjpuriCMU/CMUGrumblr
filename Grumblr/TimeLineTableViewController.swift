@@ -23,6 +23,54 @@ class TimeLineTableViewController: UITableViewController {
                 textfield.placeholder = "Password"
                 textfield.secureTextEntry = true
             })
+            loginAlert.addAction(UIAlertAction(title: "Login", style: UIAlertActionStyle.Default, handler: {
+                alertAction in
+                let textFields:NSArray = loginAlert.textFields! as NSArray
+                let usernameTextField: UITextField = textFields.objectAtIndex(0) as UITextField
+                let passwordTextField: UITextField = textFields.objectAtIndex(1) as UITextField
+                
+                PFUser.logInWithUsernameInBackground(usernameTextField.text, password: passwordTextField.text){
+                    (user:PFUser!, error:NSError!)-> Void in
+                    if ((user) != nil){
+                        println("Logged in!")
+                    }
+                    else{
+                        println("Login Failed!")
+                    }
+                }
+            
+            }))
+            loginAlert.addAction(UIAlertAction(title: "Sign up", style: UIAlertActionStyle.Default, handler: {
+                alertAction in
+                let textFields:NSArray = loginAlert.textFields! as NSArray
+                let usernameTextField: UITextField = textFields.objectAtIndex(0) as UITextField
+                let passwordTextField: UITextField = textFields.objectAtIndex(1) as UITextField
+                let passwordTextField2: UITextField = textFields.objectAtIndex(2) as UITextField
+                
+                if (passwordTextField.text != passwordTextField2.text){
+                    println("Passwords don't match")
+                }
+                else{
+                    var poster: PFUser = PFUser()
+                    poster.username = usernameTextField.text
+                    poster.password = passwordTextField.text
+                    poster.signUpInBackgroundWithBlock({
+                        (success:Bool!, error: NSError!)-> Void in
+                        if (error != nil){
+                            println("Sign up successful")
+                        }
+                        else{
+                            println(error.userInfo?["error"])
+                        }
+                        
+                    })
+                    
+                }
+    
+                
+            }))
+            
+            self.presentViewController(loginAlert, animated: true, completion: nil)
         }
     }
     

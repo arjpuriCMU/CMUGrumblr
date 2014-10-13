@@ -12,6 +12,7 @@ class ComposeViewController: UIViewController {
 
     @IBOutlet var newPostView: UITextView! = UITextView()
     @IBOutlet var remainingCharLabel: UILabel! = UILabel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         newPostView.layer.borderColor = UIColor.blackColor().CGColor
