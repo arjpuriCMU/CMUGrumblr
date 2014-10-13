@@ -13,7 +13,7 @@ class TimeLineTableViewController: UITableViewController {
     override func viewDidAppear(animated: Bool) {
         
       
-        if ((PFUser.currentUser()) != nil){
+        if ((PFUser.currentUser()) == nil){
             var loginAlert: UIAlertController = UIAlertController(title: "Sign Up/ Login", message: "Please sign up or login", preferredStyle: UIAlertControllerStyle.Alert)
             loginAlert.addTextFieldWithConfigurationHandler({
                 textfield in
@@ -46,28 +46,20 @@ class TimeLineTableViewController: UITableViewController {
                 let textFields:NSArray = loginAlert.textFields! as NSArray
                 let usernameTextField: UITextField = textFields.objectAtIndex(0) as UITextField
                 let passwordTextField: UITextField = textFields.objectAtIndex(1) as UITextField
-                let passwordTextField2: UITextField = textFields.objectAtIndex(2) as UITextField
                 
-                if (passwordTextField.text != passwordTextField2.text){
-                    println("Passwords don't match")
-                }
-                else{
-                    var poster: PFUser = PFUser()
-                    poster.username = usernameTextField.text
-                    poster.password = passwordTextField.text
-                    poster.signUpInBackgroundWithBlock({
-                        (success:Bool!, error: NSError!)-> Void in
-                        if (error != nil){
-                            println("Sign up successful")
-                        }
-                        else{
-                            println(error.userInfo?["error"])
-                        }
-                        
-                    })
+                var poster: PFUser = PFUser()
+                poster.username = usernameTextField.text
+                poster.password = passwordTextField.text
+                poster.signUpInBackgroundWithBlock({
+                    (success:Bool!, error: NSError!)-> Void in
+                    if (error == nil){
+                        println("Sign up successful")
+                    }
+                    else{
+                        println(error.userInfo?["error"])
+                    }
                     
-                }
-    
+                })
                 
             }))
             
