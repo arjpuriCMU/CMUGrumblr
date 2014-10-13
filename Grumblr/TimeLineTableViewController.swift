@@ -14,7 +14,7 @@ class TimeLineTableViewController: UITableViewController {
     
     func loadData(){
         timeLineData.removeAllObjects()
-        var findTimeLineData: PFQuery = PFQuery(className: "Posts")
+        var findTimeLineData: PFQuery = PFQuery(className: "Post")
         findTimeLineData.findObjectsInBackgroundWithBlock{
             (objects:[AnyObject]!, error: NSError!) ->Void in
             
@@ -23,7 +23,8 @@ class TimeLineTableViewController: UITableViewController {
                     self.timeLineData.addObject(object)
                 }
                 let array: NSArray = self.timeLineData.reverseObjectEnumerator().allObjects
-                self.timeLineData = array as NSMutableArray
+                self.timeLineData.removeAllObjects()
+                self.timeLineData.addObjectsFromArray(array)
                 
                 self.tableView.reloadData()
             }
