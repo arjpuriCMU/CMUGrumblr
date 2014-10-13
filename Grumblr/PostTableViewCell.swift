@@ -10,6 +10,9 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
 
+    @IBOutlet var username: UILabel! = UILabel()
+    @IBOutlet var timeStampLabel: UILabel! = UILabel()
+    @IBOutlet var postTextView: UITextView! = UITextView()
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

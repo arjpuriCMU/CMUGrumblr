@@ -81,6 +81,11 @@
                                         </textView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="postTextView" destination="sST-35-e2B" id="p02-zb-R4r"/>
+                                    <outlet property="timeStampLabel" destination="7KQ-q9-6a0" id="EPi-Yj-xOE"/>
+                                    <outlet property="username" destination="jEX-bQ-1BF" id="SrJ-IV-Vp6"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

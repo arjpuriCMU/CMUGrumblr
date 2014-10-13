@@ -10,8 +10,28 @@ import UIKit
 
 class TimeLineTableViewController: UITableViewController {
     
+    var timeLineData:NSMutableArray = NSMutableArray()
+    
+    func loadData(){
+        timeLineData.removeAllObjects()
+        var findTimeLineData: PFQuery = PFQuery(className: "Posts")
+        findTimeLineData.findObjectsInBackgroundWithBlock{
+            (objects:[AnyObject]!, error: NSError!) ->Void in
+            
+            if (error == nil){
+                for object in objects{
+                    self.timeLineData.addObject(object)
+                }
+                let array: NSArray = self.timeLineData.reverseObjectEnumerator().allObjects
+                self.timeLineData = array as NSMutableArray
+                
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
     override func viewDidAppear(animated: Bool) {
-        
+        self.loadData()
       
         if ((PFUser.currentUser()) == nil){
             var loginAlert: UIAlertController = UIAlertController(title: "Sign Up/ Login", message: "Please sign up or login", preferredStyle: UIAlertControllerStyle.Alert)
@@ -87,27 +107,29 @@ class TimeLineTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
+    override func numberOfSectionsInTableView(tableView: UITableView?) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
-    override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView?, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return timeLineData.count
     }
-
-    /*
-    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
-        // Configure the cell...
+    
+    override func tableView(tableView: UITableView?, cellForRowAtIndexPath indexPath: NSIndexPath?) -> UITableViewCell {
+        let cell:PostTableViewCell = tableView!.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath!) as PostTableViewCell
+        
+        let post: PFObject = self.timeLineData.objectAtIndex(indexPath!.row)as PFObject
+        cell.postTextView.text = post.objectForKey("content") as String
+        
 
         return cell
     }
-    */
+    
+
 
     /*
     // Override to support conditional editing of the table view.
