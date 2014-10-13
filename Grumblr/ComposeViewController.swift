@@ -14,7 +14,11 @@ class ComposeViewController: UIViewController {
     @IBOutlet var remainingCharLabel: UILabel! = UILabel()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        newPostView.layer.borderColor = UIColor.blackColor().CGColor
+        newPostView.layer.borderWidth = 0.5
+        newPostView.layer.cornerRadius = 5
+        newPostView.becomeFirstResponder()
+        
         // Do any additional setup after loading the view.
     }
     
@@ -22,8 +26,14 @@ class ComposeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+  
     @IBAction func savePost(sender: AnyObject) {
+        var post: PFObject = PFObject(className: "Post")
+        post["content"] = newPostView.text
+        post["poster"] = PFUser.currentUser()
+        post.saveInBackground()
+        self.navigationController?.popToRootViewControllerAnimated(true)
+        
     }
 
     /*

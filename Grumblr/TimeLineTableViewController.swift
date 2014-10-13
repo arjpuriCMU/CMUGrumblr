@@ -10,6 +10,22 @@ import UIKit
 
 class TimeLineTableViewController: UITableViewController {
     
+    override func viewDidAppear(animated: Bool) {
+        
+        if ((PFUser.currentUser()) != nil){
+            var loginAlert: UIAlertController = UIAlertController(title: "Sign Up/ Login", message: "Please sign up or login", preferredStyle: UIAlertControllerStyle.Alert)
+            loginAlert.addTextFieldWithConfigurationHandler({
+                textfield in
+                textfield.placeholder = "Username"
+            })
+            loginAlert.addTextFieldWithConfigurationHandler({
+                textfield in
+                textfield.placeholder = "Password"
+                textfield.secureTextEntry = true
+            })
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
