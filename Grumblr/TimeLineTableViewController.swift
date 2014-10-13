@@ -123,9 +123,30 @@ class TimeLineTableViewController: UITableViewController {
     override func tableView(tableView: UITableView?, cellForRowAtIndexPath indexPath: NSIndexPath?) -> UITableViewCell {
         let cell:PostTableViewCell = tableView!.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath!) as PostTableViewCell
         
+        cell.postTextView.alpha = 0
+        cell.timeStampLabel.alpha = 0
+        cell.username.alpha = 0
         let post: PFObject = self.timeLineData.objectAtIndex(indexPath!.row)as PFObject
         cell.postTextView.text = post.objectForKey("content") as String
         
+        var dateFormatter: NSDateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        
+        var findPoster: PFQuery = PFUser.query()
+        findPoster.whereKey("objectId", equalTo: post.objectForKey("poster").objectId)
+        findPoster.findObjectsInBackgroundWithBlock{
+            (objects:[AnyObject]!, error:NSError!) -> Void in
+            if (error == nil){
+                let user: PFUser = (objects as NSArray).lastObject as PFUser
+                cell.username.text = user.username
+                cell.timeStampLabel.text = dateFormatter.stringFromDate(post.createdAt)
+                UIView.animateWithDuration(0.5, animations: {
+                    cell.postTextView.alpha = 1
+                    cell.timeStampLabel.alpha = 1
+                    cell.username.alpha = 1
+                })
+            }
+        }
 
         return cell
     }
