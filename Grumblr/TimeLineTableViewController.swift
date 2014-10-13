@@ -10,29 +10,40 @@ import UIKit
 
 class TimeLineTableViewController: UITableViewController {
     
+    @IBOutlet var logging: UIButton!
     var timeLineData:NSMutableArray = NSMutableArray()
-    
+    var hasUser:Bool = false
+    @IBAction func logout(sender: UIButton) {
+        self.logging.setTitle("login", forState: UIControlState.Normal)
+        hasUser = false
+        self.timeLineData.removeAllObjects()
+        self.loadData();
+        PFUser.logOut()
+        viewDidAppear(true)
+    }
     @IBAction func loadData(){
         timeLineData.removeAllObjects()
-        var findTimeLineData: PFQuery = PFQuery(className: "Post")
-        findTimeLineData.findObjectsInBackgroundWithBlock{
-            (objects:[AnyObject]!, error: NSError!) ->Void in
-            
-            if (error == nil){
-                for object in objects{
-                    self.timeLineData.addObject(object)
-                }
-                let array: NSArray = self.timeLineData.reverseObjectEnumerator().allObjects
-                self.timeLineData.removeAllObjects()
-                self.timeLineData.addObjectsFromArray(array)
+        if (hasUser){
+            var findTimeLineData: PFQuery = PFQuery(className: "Post")
+            findTimeLineData.findObjectsInBackgroundWithBlock{
+                (objects:[AnyObject]!, error: NSError!) ->Void in
                 
-                self.tableView.reloadData()
+                if (error == nil){
+                    for object in objects{
+                        self.timeLineData.addObject(object)
+                    }
+                    let array: NSArray = self.timeLineData.reverseObjectEnumerator().allObjects
+                    self.timeLineData.removeAllObjects()
+                    self.timeLineData.addObjectsFromArray(array)
+                    
+                    self.tableView.reloadData()
+                }
             }
         }
+        self.tableView.reloadData()
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.loadData()
       
         if ((PFUser.currentUser()) == nil){
             var loginAlert: UIAlertController = UIAlertController(title: "Sign Up/ Login", message: "Please sign up or login", preferredStyle: UIAlertControllerStyle.Alert)
@@ -55,9 +66,13 @@ class TimeLineTableViewController: UITableViewController {
                     (user:PFUser!, error:NSError!)-> Void in
                     if ((user) != nil){
                         println("Logged in!")
+                        self.logging.setTitle("logout", forState: UIControlState.Normal)
+                        self.hasUser=true
+                        self.loadData()
                     }
                     else{
                         println("Login Failed!")
+                        self.hasUser=false
                     }
                 }
             
@@ -75,9 +90,13 @@ class TimeLineTableViewController: UITableViewController {
                     (success:Bool!, error: NSError!)-> Void in
                     if (error == nil){
                         println("Sign up successful")
+                        self.logging.setTitle("logout", forState: UIControlState.Normal)
+                        self.hasUser=true
+                        self.loadData()
                     }
                     else{
                         println(error.userInfo?["error"])
+                        self.hasUser=false
                     }
                     
                 })
@@ -92,6 +111,9 @@ class TimeLineTableViewController: UITableViewController {
     }
     
     override func viewDidLoad() {
+        if(!self.hasUser) {
+            PFUser.logOut()
+        }
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
