@@ -12,6 +12,7 @@ class TimeLineTableViewController: UITableViewController {
     
     override func viewDidAppear(animated: Bool) {
         
+      
         if ((PFUser.currentUser()) != nil){
             var loginAlert: UIAlertController = UIAlertController(title: "Sign Up/ Login", message: "Please sign up or login", preferredStyle: UIAlertControllerStyle.Alert)
             loginAlert.addTextFieldWithConfigurationHandler({
@@ -71,6 +72,9 @@ class TimeLineTableViewController: UITableViewController {
             }))
             
             self.presentViewController(loginAlert, animated: true, completion: nil)
+        }
+        else{
+            println("yoloolosidfa")
         }
     }
     
