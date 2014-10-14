@@ -35,13 +35,14 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
             var newLength:Int = (textView.text as NSString).length + (text as NSString).length - range.length
             var remainingChar: Int = 140 - newLength
             remainingCharLabel.text = "\(remainingChar)"
-            return (newLength > 140) ? false : true
+            return (newLength >= 140) ? false : true
 
     }
   
     @IBAction func savePost(sender: AnyObject) {
         var post: PFObject = PFObject(className: "Post")
         post["content"] = newPostView.text
+        post["posterUsername"] = PFUser.currentUser().username
         post["poster"] = PFUser.currentUser()
         post.saveInBackground()
         self.navigationController?.popToRootViewControllerAnimated(true)

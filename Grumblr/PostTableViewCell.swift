@@ -13,6 +13,8 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet var username: UILabel! = UILabel()
     @IBOutlet var timeStampLabel: UILabel! = UILabel()
     @IBOutlet var postTextView: UITextView! = UITextView()
+    @IBOutlet var profileImageView: UIImageView! = UIImageView()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

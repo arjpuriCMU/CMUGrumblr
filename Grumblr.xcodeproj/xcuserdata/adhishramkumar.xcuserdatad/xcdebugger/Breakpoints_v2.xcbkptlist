@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Grumblr/TimeLineTableViewController.swift"
-            timestampString = "434876034.835103"
+            timestampString = "435014970.536981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "loadData()"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Grumblr/TimeLineTableViewController.swift"
-            timestampString = "434876034.835103"
+            timestampString = "435014970.536981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "logout()"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "logout(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -54,10 +54,24 @@
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Grumblr.TimeLineTableViewController.timeLineData.setter : ObjectiveC.NSMutableArray"
+                  symbolName = "Grumblr.TimeLineTableViewController.logging.getter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIButton&gt;"
                   moduleName = "Grumblr"
                   urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/TimeLineTableViewController.swift"
-                  timestampString = "434876008.004988"
+                  timestampString = "434877629.511352"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Grumblr.TimeLineTableViewController.logging.setter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIButton&gt;"
+                  moduleName = "Grumblr"
+                  urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/TimeLineTableViewController.swift"
+                  timestampString = "434877629.511517"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -71,12 +85,12 @@
                   symbolName = "Grumblr.TimeLineTableViewController.init (Grumblr.TimeLineTableViewController.Type)(style : C.UITableViewStyle) -&gt; Grumblr.TimeLineTableViewController"
                   moduleName = "Grumblr"
                   urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/TimeLineTableViewController.swift"
-                  timestampString = "434876008.005086"
+                  timestampString = "434877629.511617"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
                   endingLineNumber = "13"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "32">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -85,12 +99,12 @@
                   symbolName = "Grumblr.TimeLineTableViewController.init (Grumblr.TimeLineTableViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Grumblr.TimeLineTableViewController"
                   moduleName = "Grumblr"
                   urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/TimeLineTableViewController.swift"
-                  timestampString = "434876008.005181"
+                  timestampString = "434877629.511715"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
                   endingLineNumber = "13"
-                  offsetFromSymbolStart = "17">
+                  offsetFromSymbolStart = "36">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -99,12 +113,12 @@
                   symbolName = "Grumblr.TimeLineTableViewController.init (Grumblr.TimeLineTableViewController.Type)() -&gt; Grumblr.TimeLineTableViewController"
                   moduleName = "Grumblr"
                   urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/TimeLineTableViewController.swift"
-                  timestampString = "434876008.005271"
+                  timestampString = "434877629.511809"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
                   endingLineNumber = "13"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "32">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -113,12 +127,202 @@
                   symbolName = "Grumblr.TimeLineTableViewController.init (Grumblr.TimeLineTableViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Grumblr.TimeLineTableViewController"
                   moduleName = "Grumblr"
                   urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/TimeLineTableViewController.swift"
-                  timestampString = "434876008.005373"
+                  timestampString = "434877629.511913"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
                   endingLineNumber = "13"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Grumblr/PostTableViewCell.swift"
+            timestampString = "434878086.324841"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "PostTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Grumblr.PostTableViewCell.timeStampLabel.getter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UILabel&gt;"
+                  moduleName = "Grumblr"
+                  urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/PostTableViewCell.swift"
+                  timestampString = "434878086.357553"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Grumblr.PostTableViewCell.timeStampLabel.setter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UILabel&gt;"
+                  moduleName = "Grumblr"
+                  urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/PostTableViewCell.swift"
+                  timestampString = "434878086.357812"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Grumblr.PostTableViewCell.init (Grumblr.PostTableViewCell.Type)(style : C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; Grumblr.PostTableViewCell"
+                  moduleName = "Grumblr"
+                  urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/PostTableViewCell.swift"
+                  timestampString = "434878086.357988"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Grumblr.PostTableViewCell.init (Grumblr.PostTableViewCell.Type)(frame : C.CGRect) -&gt; Grumblr.PostTableViewCell"
+                  moduleName = "Grumblr"
+                  urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/PostTableViewCell.swift"
+                  timestampString = "434878086.358158"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Grumblr.PostTableViewCell.init (Grumblr.PostTableViewCell.Type)() -&gt; Grumblr.PostTableViewCell"
+                  moduleName = "Grumblr"
+                  urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/PostTableViewCell.swift"
+                  timestampString = "434878086.35832"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Grumblr.PostTableViewCell.init (Grumblr.PostTableViewCell.Type)(coder : ObjectiveC.NSCoder) -&gt; Grumblr.PostTableViewCell"
+                  moduleName = "Grumblr"
+                  urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/PostTableViewCell.swift"
+                  timestampString = "434878086.358479"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Grumblr/ComposeViewController.swift"
+            timestampString = "434967432.42765"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "6"
+            endingLineNumber = "6">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Grumblr.ComposeViewController.__deallocating_deinit"
+                  moduleName = "Grumblr"
+                  urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/ComposeViewController.swift"
+                  timestampString = "434967432.483411"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc Grumblr.ComposeViewController.__ivar_destroyer"
+                  moduleName = "Grumblr"
+                  urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/ComposeViewController.swift"
+                  timestampString = "434967432.483662"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Grumblr/ComposeViewController.swift"
+            timestampString = "434967439.829185"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Grumblr.ComposeViewController.__deallocating_deinit"
+                  moduleName = "Grumblr"
+                  urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/ComposeViewController.swift"
+                  timestampString = "434967439.830757"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc Grumblr.ComposeViewController.__ivar_destroyer"
+                  moduleName = "Grumblr"
+                  urlString = "file:///Users/adhishramkumar/Documents/iOSGrumblr/CMUGrumblr/Grumblr/ComposeViewController.swift"
+                  timestampString = "434967439.830962"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>
