@@ -144,7 +144,7 @@ class TimeLineTableViewController: UITableViewController, UISearchBarDelegate, U
                     if ((user) != nil){
                         self.logError = false
                         self.logging.setTitle("logout", forState: UIControlState.Normal)
-                        //self.logging.sizeToFit()
+                        self.logging.sizeToFit()
                         self.hasUser=true
                         self.loadData()
                     }
@@ -176,7 +176,7 @@ class TimeLineTableViewController: UITableViewController, UISearchBarDelegate, U
                         self.presentViewController(imagePicker, animated: true, completion: nil)
                         println("Sign up successful")
                         self.logging.setTitle("logout", forState: UIControlState.Normal)
-                        //self.logging.sizeToFit()
+                        self.logging.sizeToFit()
                         self.hasUser=true
                         self.loadData()
                     }
@@ -192,9 +192,6 @@ class TimeLineTableViewController: UITableViewController, UISearchBarDelegate, U
             }))
             
             self.presentViewController(loginAlert, animated: true, completion: nil)
-        }
-        else{
-            println("yoloolosidfa")
         }
     }
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: NSDictionary) {
