@@ -23,12 +23,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="61l-EW-mCj">
-                                <rect key="frame" x="16" y="178" width="288" height="370"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O7B-Oq-eK0">
-                                <rect key="frame" x="16" y="92" width="568" height="78"/>
+                                <rect key="frame" x="16" y="92" width="568" height="60"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -39,7 +35,6 @@
                             <constraint firstItem="O7B-Oq-eK0" firstAttribute="top" secondItem="CaO-6x-nAZ" secondAttribute="bottom" constant="28" id="CKh-l3-ZGa"/>
                             <constraint firstItem="y9X-Rx-7fT" firstAttribute="top" secondItem="CaO-6x-nAZ" secondAttribute="bottom" constant="8" id="OqX-u0-Hts"/>
                             <constraint firstItem="O7B-Oq-eK0" firstAttribute="top" secondItem="y9X-Rx-7fT" secondAttribute="bottom" constant="-1" id="SyH-ba-yuh"/>
-                            <constraint firstItem="61l-EW-mCj" firstAttribute="top" secondItem="O7B-Oq-eK0" secondAttribute="bottom" constant="8" id="VKQ-3h-kGi"/>
                             <constraint firstItem="y9X-Rx-7fT" firstAttribute="leading" secondItem="gVY-BE-xVi" secondAttribute="leadingMargin" id="e7K-lE-k46"/>
                             <constraint firstItem="O7B-Oq-eK0" firstAttribute="trailing" secondItem="gVY-BE-xVi" secondAttribute="trailingMargin" id="fUx-5Y-moe"/>
                             <constraint firstItem="O7B-Oq-eK0" firstAttribute="leading" secondItem="gVY-BE-xVi" secondAttribute="leadingMargin" id="jRZ-Bo-LzR"/>
@@ -60,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlH-Qn-RpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2120.625" y="394.01408450704224"/>
+            <point key="canvasLocation" x="2120" y="394"/>
         </scene>
         <!--Time Line Table View Controller-->
         <scene sceneID="9py-1h-kdv">
