@@ -2,8 +2,6 @@
 //  AppDelegate.swift
 //  Grumblr
 //
-//  Created by Adhish Ramkumar on 10/12/14.
-//  Copyright (c) 2014 Adhish Ramkumar. All rights reserved.
 //
 
 import UIKit

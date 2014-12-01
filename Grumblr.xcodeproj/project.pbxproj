@@ -24,10 +24,12 @@
 		2A77EEFE19EB3BA7008DDFFF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEFB19EB3BA7008DDFFF /* Bolts.framework */; };
 		2A77EEFF19EB3BA7008DDFFF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEFC19EB3BA7008DDFFF /* Parse.framework */; };
 		2A77EF0019EB3BA7008DDFFF /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A77EEFD19EB3BA7008DDFFF /* ParseFacebookUtils.framework */; };
-		2A77EF0619EB3ECD008DDFFF /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A77EF0519EB3ECD008DDFFF /* Storyboard.storyboard */; };
 		2A77EF0819EB48F8008DDFFF /* TimeLineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A77EF0719EB48F8008DDFFF /* TimeLineTableViewController.swift */; };
 		2A77EF0A19EB4979008DDFFF /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A77EF0919EB4979008DDFFF /* ComposeViewController.swift */; };
 		2A77EF0C19EB4C63008DDFFF /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A77EF0B19EB4C63008DDFFF /* PostTableViewCell.swift */; };
+		4751EE201A2C7011009CD17E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4751EE1F1A2C7011009CD17E /* MainStoryboard.storyboard */; };
+		4751EE221A2C755A009CD17E /* orange_drop.png in Resources */ = {isa = PBXBuildFile; fileRef = 4751EE211A2C755A009CD17E /* orange_drop.png */; };
+		47C3A6C61A2C5D5B00F62780 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C3A6C51A2C5D5B00F62780 /* IntroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +65,12 @@
 		2A77EEFC19EB3BA7008DDFFF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		2A77EEFD19EB3BA7008DDFFF /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		2A77EF0219EB3C4C008DDFFF /* Grumblr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Grumblr-Bridging-Header.h"; sourceTree = "<group>"; };
-		2A77EF0519EB3ECD008DDFFF /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		2A77EF0719EB48F8008DDFFF /* TimeLineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewController.swift; sourceTree = "<group>"; };
 		2A77EF0919EB4979008DDFFF /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		2A77EF0B19EB4C63008DDFFF /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		4751EE1F1A2C7011009CD17E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		4751EE211A2C755A009CD17E /* orange_drop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orange_drop.png; path = ../orange_drop.png; sourceTree = "<group>"; };
+		47C3A6C51A2C5D5B00F62780 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,9 +127,11 @@
 		2A77EEC819EB384F008DDFFF /* Grumblr */ = {
 			isa = PBXGroup;
 			children = (
+				4751EE211A2C755A009CD17E /* orange_drop.png */,
 				2A77EECB19EB384F008DDFFF /* AppDelegate.swift */,
-				2A77EF0519EB3ECD008DDFFF /* Storyboard.storyboard */,
+				4751EE1F1A2C7011009CD17E /* MainStoryboard.storyboard */,
 				2A77EF0919EB4979008DDFFF /* ComposeViewController.swift */,
+				47C3A6C51A2C5D5B00F62780 /* IntroViewController.swift */,
 				2A77EF0719EB48F8008DDFFF /* TimeLineTableViewController.swift */,
 				2A77EF0B19EB4C63008DDFFF /* PostTableViewCell.swift */,
 				2A77EF0219EB3C4C008DDFFF /* Grumblr-Bridging-Header.h */,
@@ -270,7 +276,8 @@
 			files = (
 				2A77EED119EB384F008DDFFF /* LaunchScreen.xib in Resources */,
 				2A77EECE19EB384F008DDFFF /* Images.xcassets in Resources */,
-				2A77EF0619EB3ECD008DDFFF /* Storyboard.storyboard in Resources */,
+				4751EE221A2C755A009CD17E /* orange_drop.png in Resources */,
+				4751EE201A2C7011009CD17E /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47C3A6C61A2C5D5B00F62780 /* IntroViewController.swift in Sources */,
 				2A77EF0A19EB4979008DDFFF /* ComposeViewController.swift in Sources */,
 				2A77EF0819EB48F8008DDFFF /* TimeLineTableViewController.swift in Sources */,
 				2A77EECC19EB384F008DDFFF /* AppDelegate.swift in Sources */,
